@@ -1,6 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Ксения Токарева](https://up.htmlacademy.ru/htmlcss/15/user/265117).
+* Наставник: [Виталий Кулешин](https://up.htmlacademy.ru/htmlcss/15/user/268493).
 
 ---
 
