@@ -2,35 +2,31 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/normalize.css">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
     <!-- <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p> -->
-    <nav class="container">
-      <div class="navbar">
-        <ul clas="left-nav">
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html"><img src="#" alt="logo"></a>
+      </div>
+        <ul >
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
-        </ul>
-        <div class="logo">
-          <a href="index.html"><img src="#" alt="logo"></a>
-        </div>
-        <ul class="right-nav">
           <li><a href="#">Карта штата</a></li>
           <li><a href="#">Гостиницы</a></li>
         </ul>
-      </div>
     </nav>
     <header class="main-header">
       <div class="header">
         <p class="header-welcome">Welcome</p>
         <p class="header-2nd">to the gorgeous</p>
         <h1 class="header-sedona">Sedona</h1>
-        <blockqoute class="header-quote">&ldquo;Because the Grand Canyon sucks!&bdquo;</blockquote>
+        <p class="header-quote">&ldquo;Because the Grand Canyon sucks!&bdquo;</p>
       </div>
     </header>
-    <main class="container">
+    <main>
       <div class="simple-text">
         <h3 class="text-h3">Седона &mdash; небольшой городок в Аризоне,<br/>заслуживающий большего!</h3>
         <p class="text-p">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
@@ -46,6 +42,7 @@
         <aside class="reason-1-right">
           <img src="#" alt="real city">
         </aside>
+      </div>
       <div class="features">
         <div class="feature-left">
             <img class="feature-img" src="#" alt="hotels">
@@ -97,7 +94,7 @@
           <h3 class="form-header">Поиск гостиницы в Седоне</h3>
         </section>
         <div class="form">
-          <form class="booking-form" action="" method="post">
+          <form class="booking-form" action="#" method="post">
             <label for="arrival-date">Дата Заезда:</label>
             <input type="text" name="arrival-date" id="arrival-date" value="" placeholder="24 апреля 2016">
             <label for="departure-date">Дата Выезда:</label>
@@ -115,7 +112,7 @@
         </div>
       </div>
     </main>
-    <footer class="container">
+    <footer>
       <div class="footer-all">
         <div class="footer-visit">
           <h3 class="text-h3">#VisitSedona</h3>
