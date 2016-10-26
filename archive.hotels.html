@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>HTML Academy: Отели</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="index.html"><img src="#" alt="logo"></a>
+      </div>
+      <ul>
+        <li><a href="#">Информация</a></li>
+        <li><a href="#">Фото и видео</a></li>
+        <li><a href="#">Карта штата</a></li>
+        <li><a href="#">Гостиницы</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="structure">
+          <form class="hotel-search" action="#" method="post">
+            <strong>Инфраструктура</strong>
+            <label><input type="checkbox" name="infrastructure1" value="piscine" checked>Бассейн</label>
+            <label><input type="checkbox" name="infrastructure2" value="parking">Парковка</label>
+            <label><input type="checkbox" name="infrastructure3" value="wi-fi">Wi-Fi</label>
+            <strong>Тип Жилья:</strong>
+            <label><input type="checkbox" name="lodging1" value="hotel" checked>Гостиница</label>
+            <label><input type="checkbox" name="lodging2" value="motel" checked>Мотель</label>
+            <label><input type="checkbox" name="lodging3" value="flat" checked>Апартаменты</label>
+            <strong>Стоимость в сутки (Р):</strong>
+            <input type="number" name="moneyfrom" min="0" max="3000" value="0">
+            <input type="number" name="moneyto" min="0" max="3000" value="3000">
+            <input type="range" name="money" min="0" max="3000">
+            <button type="submit" name="show" value="show">Показать</button>
+          </form>
+      </section>
+
+      <section class="results-form">
+        <strong>Найдено: 3</strong>
+        <ul>
+          <li>Сортировка:</li>
+          <li>по цене</li>
+          <li>по типу</li>
+          <li>по рейтингу</li>
+        </ul>
+        <div class="arrows">
+          <button type="button" value="up"><img src="#" alt="icon-up-dir"></button>
+          <button type="button" value="down"><img src="#" alt="icon-down-dir"></button>
+        </div>
+      </section>
+
+      <section class="hotels-results">
+        <div class="hotels-results-left">
+          <img src="#" alt="amara resort&spa" height="100" width="200">
+          <strong>Amara Resort & Spa</strong>
+          <p>Гостиница от 3500 р.</p>
+          <a href="#" class="more">Подробнее</a>
+          <a href="#" class="book">Забронировать</a>
+        </div>
+        <div class="hotels-results-right">
+          <p>4 звездочки в формате woff</p>
+          <p>Рейтинг: 8,5</p>
+        </div>
+      </section>
+
+      <section class="hotels-results">
+        <div class="hotels-results-left">
+          <img src="#" alt="desert quail inn" height="100" width="200">
+          <strong> Desert Quail Inn</strong>
+          <p>Мотель от 2000 р.</p>
+          <a href="#" class="more">Подробнее</a>
+          <a href="#" class="book">Забронировать</a>
+        </div>
+        <div class="hotels-results-right">
+          <p>2 звездочки в формате woff</p>
+          <p>Рейтинг: 8,9</p>
+        </div>
+      </section>
+
+      <section class="hotels-results>
+        <div class="hotels-results-left">
+          <img src="#" alt="villas at poco diablo" height="100" width="200">
+          <strong>Villas at Poco Diablo</strong>
+          <p>Апартаменты от 4000 р.</p>
+          <a href="#" class="more">Подробнее</a>
+          <a href="#" class="book">Забронировать</a>
+        </div>
+        <div class="hotels-results-right">
+          <p>3 звездочки в формате woff</p>
+          <p>Рейтинг: 9,2</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-visit">#VisitSedona</div>
+      <div class="footer-social">
+        <a class="social-btn" href="#">твиттер</a>
+        <a class="social-btn" href="#">фейсбук</a>
+        <a class="social-btn" href="#">инстаграм</a>
+      </div>
+      <div class="footer-ha">
+        <a class="by-ha" href="#">Website by htmlacademy</a>
+      </div>
+    </footer>
+  </body>
