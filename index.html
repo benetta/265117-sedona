@@ -3,11 +3,14 @@
 <head>
   <meta charset="utf-8">
   <title>Добро пожаловать в Седону</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <nav>
     <img src="img/logo.png" alt="Логотип Седоны">
-    <ul>
+    <ul class="navigation">
       <li>Информация</li>
       <li>Фото и Видео</li>
       <li>Карта Штата</li>
@@ -18,16 +21,20 @@
   <header>
     <h1>Welcome to the gorgeous Sedona
     "Because the Grand Canyon sucks!"</h1>
-  </header>
 
-  <p><strong>Седона - небольшой городок в Аризоне, заслуживающий большего!</strong> Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+    <p><strong>Седона - небольшой городок в Аризоне, заслуживающий большего!</strong> Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+  </header>
 
   <!-- Первая причина -->
   <article>
     <header>
-      <img src="img/reason-1.jpg" alt="Настоящий городок Седона">
-      <h3>Настоящий городок</h3>
-      <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+      <div class="image">
+        <img src="img/reason-1.jpg" alt="Настоящий городок Седона">
+      </div>
+      <div class="info">
+        <h3>Настоящий городок</h3>
+        <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+      </div>
     </header>
     <section>
       <img src="img/home.png" alt="Жилье">
@@ -48,7 +55,7 @@
 
   <!-- Вторая причина -->
   <article>
-    <header>
+    <header  style="background-image: url(img/reason-2.jpg);">
       <img src="img/reason-2.jpg" alt="Мост Дьявола">
       <h3>Там есть мост дьявола</h3>
       <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
@@ -83,7 +90,7 @@
   <section>
     <h2>Заинтересовались?</h2>
     <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-    <img src="img/map.jpg" alt="Карта">
+    <img src="img/map.jpg" alt="Карта" width="100%">
     <form>
       <header>Поиск гостиницы в Седоне</header>
       <div>

@@ -1,0 +1,75 @@
+/*article > header {
+  background: #81b3d2  top right no-repeat;
+  background-size: 66.66% auto;
+  min-height: 260px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding-right: 66.66%;
+  padding-top: 50px;
+  padding-left: 20px;
+}*/
+
+article > header {
+  background-color: #81b3d2;
+  overflow: hidden;
+}
+
+.image {
+  width: 66.666%;
+  /*float: right;*/
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.image img {
+  width: 100%;
+  display: block;
+}
+
+.info {
+  width: 33.333%;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  background-color: #81b3d2;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/*
+██████╗ ██████╗ ███╗   ███╗███╗   ███╗ ██████╗ ███╗   ██╗
+██╔════╝██╔═══██╗████╗ ████║████╗ ████║██╔═══██╗████╗  ██║
+██║     ██║   ██║██╔████╔██║██╔████╔██║██║   ██║██╔██╗ ██║
+██║     ██║   ██║██║╚██╔╝██║██║╚██╔╝██║██║   ██║██║╚██╗██║
+╚██████╗╚██████╔╝██║ ╚═╝ ██║██║ ╚═╝ ██║╚██████╔╝██║ ╚████║
+╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═══╝
+*/
+
+.price::after {
+  content: " руб.";
+}
+
+
+
+/*
+████████╗███████╗███████╗████████╗███████╗
+╚══██╔══╝██╔════╝██╔════╝╚══██╔══╝██╔════╝
+   ██║   █████╗  ███████╗   ██║   ███████╗
+   ██║   ██╔══╝  ╚════██║   ██║   ╚════██║
+   ██║   ███████╗███████║   ██║   ███████║
+   ╚═╝   ╚══════╝╚══════╝   ╚═╝   ╚══════╝
+
+body > * {
+  outline: solid red 1px;
+  background-color: rgba(240, 255, 119, 0.55);
+  margin: 40px 0px;
+}
+
+article:first-of-type {
+  outline-width: 5px;
+}
+
+article:first-of-type > * {
+  float: left;
+  outline: solid rgb(187, 0, 73) 2px;
+}
+*/

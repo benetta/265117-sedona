@@ -3,70 +3,71 @@
 <head>
   <meta charset="utf-8">
   <title>Отели Седоны</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.hotels.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
 </head>
 <body>
 
-  <nav>
-    <img src="img/logo.png" alt="Логотип Седоны">
-    <ul>
+  <nav class="container">
+    <img src="img/logo.png" alt="Логотип Седоны" width="135" height="68">
+    <ul class="navigation">
       <li>Информация</li>
       <li>Фото и Видео</li>
-      <li>Карта Штата</li>
       <li>Гостиницы</li>
+      <li>Карта Штата</li>
     </ul>
   </nav>
 
   <!-- Подбор жилья -->
-  <form>
-    <fieldset>
+  <form class="container">
+    <fieldset class="structure">
       <legend>Инфраструктура:</legend>
       <label><input type="checkbox" checked> Бассейн</label>
       <label><input type="checkbox"> Парковка</label>
       <label><input type="checkbox"> Wi-Fi</label>
     </fieldset>
 
-    <fieldset>
+    <fieldset class="living-type">
       <legend>Тип жилья:</legend>
       <label><input type="checkbox" checked> Гостиница</label>
       <label><input type="checkbox" checked> Мотель</label>
       <label><input type="checkbox" checked> Апартаменты</label>
     </fieldset>
 
-    <fieldset>
+    <fieldset class="cost">
       <legend>Стоимость в сутки (р):</legend>
       <input type="number" min="0" max="3000">
       <input type="number" min="0" max="3000">
       <input type="range" min="0" max="3000">
+      <button type="submit">Показать</button>
     </fieldset>
 
-    <button type="submit">Показать</button>
   </form>
 
   <!-- Результаты -->
-  <section>
-    <nav>
+  <section class="container">
+    <nav class="results">
       <h3>Найдено: 3</h3>
-      <p>Сортировка</p>
-      <ul>
+      <p>Сортировка:</p>
+      <ul class="results-nav-left">
         <li><a href="">По цене</a></li>
         <li><a href="#">По типу</a></li>
         <li><a href="#">По рейтингу</a></li>
       </ul>
-      <ul>
+      <ul class="results-nav-right">
         <li><a href="#">&uarr;</a></li>
         <li><a href="#">&darr;</a></li>
       </ul>
     </nav>
 
     <!-- Amara -->
-    <article>
+    <article class="clearfix">
       <div class="info">
         <img src="img/amara.jpg" alt="amara resort&spa">
         <h3>Amara Resort&Spa</h3>
-        <p>Гостиница от <span class="price">3500</span></p>
-        <button>Подробнее</button>
-        <button>Забронировать</button>
+        <p>Гостиница</p><span class="price">от 3500</span>
+        <button class="more">Подробнее</button>
+        <button class="book">Забронировать</button>
       </div>
       <div class="rating">
         <div>&starf; &starf; &starf; &starf;</div>
@@ -75,13 +76,13 @@
     </article>
 
     <!-- Desert Inn -->
-    <article>
+    <article  class="clearfix">
       <div class="info">
         <img src="img/quail-inn.jpg" alt="desert quail inn">
         <h3>Desert Quail Inn</h3>
-        <p>Мотель от <span class="price">2000</span></p>
-        <button>Подробнее</button>
-        <button>Забронировать</button>
+        <p>Мотель</p><span class="price">от 2000</span>
+        <button class="more">Подробнее</button>
+        <button class="book">Забронировать</button>
       </div>
       <div class="rating">
         <div>&starf; &starf;</div>
@@ -90,13 +91,13 @@
     </article>
 
     <!-- Villas at Poco Diablo -->
-    <article>
+    <article  class="clearfix">
       <div class="info">
         <img src="img/villas.jpg" alt="Villas at Poco Diablo">
         <h3>Villas at Poco Diablo</h3>
-        <p>Апартаменты от <span class="price">4000</span></p>
-        <button>Подробнее</button>
-        <button>Забронировать</button>
+        <p>Апартаменты</p><span class="price">от 4000</span>
+        <button class="more">Подробнее</button>
+        <button class="book">Забронировать</button>
       </div>
       <div class="rating">
         <div>&starf; &starf; &starf;</div>
@@ -105,14 +106,14 @@
     </article>
   </section>
 
-  <footer>
-    <div>#visitsedona</div>
-      <ul>
-        <li><a href="http://twitter.com">twitter</a></li>
-        <li><a href="http://facebook.com">facebook</a></li>
-        <li><a href="http://youtube.com">youtube</a></li>
-      </ul>
-      <div><a href="http://htmlacademy.ru">Website by html academy</a></div>
+  <footer class="container">
+      <div class="visit-us"><p>#visitsedona</p></div>
+        <ul class="social">
+          <li><a class="social-twitter" href="http://twitter.com">twitter</a></li>
+          <li><a class="social-fb" href="http://facebook.com">facebook</a></li>
+          <li><a class="social-yt" href="http://youtube.com">youtube</a></li>
+        </ul>
+        <div class="by-ha"><a href="http://htmlacademy.ru">Website by html academy</a></div>
   </footer>
 
 </body>

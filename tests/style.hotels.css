@@ -1,0 +1,308 @@
+/*ALL*/
+
+body {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+}
+
+.container {
+  box-sizing: border-box;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 21px;
+  padding: 0 73px;
+}
+
+/*NAVIGATION*/
+
+nav {
+  position: relative;
+  top: 0;
+  height: 60px;
+}
+
+nav > img {
+  position:absolute;
+  left: 50%;
+  margin-left: -68px;
+}
+
+.navigation {
+  width: 1160px;
+  list-style-type: none;
+  display: inline-block;
+  background-color: rgb(255, 255, 255);
+}
+
+.navigation li {
+  width: 240px;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+.navigation li:nth-child(1),
+.navigation li:nth-child(2) {
+  float: left;
+}
+
+.navigation li:nth-child(3),
+.navigation li:nth-child(4) {
+  float: right;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+}
+
+/*FORM*/
+
+form {
+  min-height: 217px;
+  background-image: url(img/header-blurred.jpg);
+  color: rgb(255, 255, 255);
+}
+legend {
+  padding-top: 30px;
+}
+label {
+  display: inline-block;
+  width: 240px;
+  margin-bottom: 23px;
+}
+
+.structure, .living-type {
+  float: left;
+  width: 240px;
+}
+
+.cost {
+  float: right;
+  width: 328px;
+}
+
+.cost > input {
+  display: inline-block;
+  width: 150px;
+}
+
+/*НЕ РАБОТАЕТ???*/
+.cost > input[range] {
+  display: inline-block;
+  width: 300px;
+}
+
+button {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 21px;
+}
+
+/*RESULTS - WHITE*/
+
+.results {
+  height: 90px;
+}
+
+.results h3,
+.results p,
+.results ul{
+  display: inline-block;
+  margin-top: 28px;
+}
+
+.results-nav-left > li,
+.results-nav-right > li {
+  list-style: none;
+  display: inline-block;
+  padding-right: 33px;
+}
+
+.results-nav-right > li:last-child {
+  padding-right: 0;
+}
+
+.results h3 {
+  min-width: 164px;
+}
+
+.results-nav-left {
+  min-width: 365px;
+}
+
+.results-nav-right {
+  float: right;
+}
+
+/*ОТЕЛИ*/
+
+article {
+  border-top: 1px solid rgb(229, 229, 229);
+  box-sizing: border-box;
+  min-height: 152px;
+}
+
+article:last-child {
+  border-bottom: 1px solid rgb(229, 229, 229);
+}
+
+article img {
+  width: 135px;
+  height: 90px;
+  float: left;
+  margin-right: 30px;
+}
+
+.info {
+  box-sizing: border-box;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 528px;
+  float: left;
+}
+
+.rating {
+  box-sizing: border-box;
+  height: 90px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 241px;
+  float: right;
+}
+
+.rating div {
+  width: 240px;
+  display: inline-block;
+  text-align: right;
+  padding-bottom: 43px;
+  float: right;
+}
+
+.info > h3 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.info p {
+  width: 110px;
+  margin-right: 6px;
+  display: inline-block;
+  margin: 0;
+}
+
+.info span {
+  display: inline-block;
+  width: 142px;
+}
+
+/*КНОПКИ*/
+
+.more {
+  width: 110px;
+  height: 27px;
+  background-color: rgb(129, 179, 210);
+  color: rgb(255, 255, 255);
+}
+
+.book {
+  width: 142px;
+  height: 27px;
+  background-color: rgb(118, 99, 87);
+  color: rgb(255, 255, 255);
+}
+
+.rating p {
+  display: inline-block;
+  margin: 0;
+  width: 111px;
+  height: 26px;
+  background-color: rgb(242, 242, 242);
+  text-align: center;
+  float: right;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+}
+
+/*FOOTER*/
+
+footer {
+  height: 121px;
+  font-size: 0px;
+}
+
+.visit-us {
+  padding-top: 36px;
+  width: 241px;
+  float: left;
+  margin-right: 88px;
+}
+
+.visit-us p {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  margin-top: 0;
+}
+
+.social {
+  list-style-type: none;
+  width: 401px;
+  vertical-align: middle;
+  text-align: center;
+  display: inline-block;
+  padding-top: 8px;
+  padding-left: 0;
+}
+
+.social li {
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.social li a {
+  display: block;
+  width: 46px;
+  height: 48px;
+  text-indent: -9999px;
+}
+
+.social-twitter {
+  background-image: url(img/social.png);
+  background-position: -56px 0px;
+}
+
+.social-fb {
+  background-position: 0px 0px;
+  background-image: url(img/social.png);
+}
+
+.social-yt {
+  background-image: url(img/social.png);
+  background-position: -112px 0px;
+}
+
+.by-ha {
+  margin-top: 25px;
+  display: inline-block;
+  float: right;
+  background-image: url(img/by-ha.png);
+  background-position: 0px 0px;
+}
+
+.by-ha a {
+  display: block;
+  width: 195px;
+  height: 39px;
+  text-indent: -9999px;
+}
