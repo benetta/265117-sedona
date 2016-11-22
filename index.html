@@ -15,10 +15,10 @@
     <nav class="site-menu">
       <a class="site-logo" href="index.html"><img src="img/logo.png" width="138" height="70" alt="Логотип Седоны"></a>
       <ul>
-        <li><a href="#">Информация</a></li>
-        <li><a href="#">Фото и Видео</a></li>
-        <li><a href="#">Карта Штата</a></li>
-        <li><a href="#">Гостиницы</a></li>
+        <li><a class="site-menu-link" href="#">Информация</a></li>
+        <li><a class="site-menu-link" href="#">Фото и Видео</a></li>
+        <li><a class="site-menu-link" href="#">Карта Штата</a></li>
+        <li><a class="site-menu-link" href="hotels.html">Гостиницы</a></li>
       </ul>
     </nav>
 
@@ -38,7 +38,8 @@
           <h3>Настоящий городок</h3>
           <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
         </div>
-        <img src="img/reason-1.jpg" alt="Настоящий городок Седона">
+        <div class="header-image reason-1"></div>
+        <!-- <img src="img/reason-1.jpg" alt="Настоящий городок Седона"> -->
       </header>
       <section>
         <img src="img/home.png" alt="Жилье">
@@ -60,9 +61,10 @@
     <!-- Вторая причина -->
     <article>
       <header class="site-flex-header">
-        <img src="img/reason-2.jpg" alt="Мост Дьявола">
+        <div class="header-image reason-2"></div>
+        <!-- <img src="img/reason-2.jpg" alt="Мост Дьявола"> -->
         <div class="header-text">
-          <h3>Там есть мост дьявола</h3>
+          <h3>Там есть<br/>мост дьявола</h3>
           <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
       </div>
       </header>
@@ -91,7 +93,7 @@
       <!-- Пятая причина -->
       <article>
         <header>
-          <h3>Мало туристов</h3>
+          <h3>Мало<br/>туристов</h3>
           <p>Большинство едет в Гранд Каньон и толпится там</p>
         </header>
       </article>
@@ -99,28 +101,40 @@
 
     <!-- Поиск гостиницы -->
     <section class="search-form">
-      <p><strong>Заинтересовались?</strong>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <img src="img/map.jpg" alt="Карта" width="100%">
+      <p><strong>Заинтересовались?</strong>Укажите предполагаемые даты поездки,<br/>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <img src="img/map.jpg" alt="Карта" width="1200">
       <form class="site-search-form">
         <header>Поиск гостиницы в Седоне</header>
-        <div>
+        <div class="site-search-form-dates">
           <label for="arrival-date">Дата Заезда:</label>
-          <input type="text" name="arrival-date" id="arrival-date" placeholder="24 апреля 2016">
+          <input type="text" name="arrival-date" id="arrival-date" value="24 апреля 2016">
+          <div class="site-calendar"></div>
         </div>
 
-        <div>
+        <div class="site-search-form-dates">
           <label for="departure-date">Дата Выезда:</label>
-          <input type="text" name="departure-date" id="departure-date" placeholder="4 июля 2016">
+          <input type="text" name="departure-date" id="departure-date" value="4 июля 2016">
+          <div class="site-calendar"></div>
         </div>
 
-        <div>
-          <label for="adults">Взрослые:</label>
-          <input type="text" name="adults" id="adults" placeholder="2">
-        </div>
+        <div class="search-form-people">
+          <div>
+            <label for="adults">Взрослые:</label>
+            <div class="site-btns">
+              <div class="site-minus"></div>
+              <input type="text" name="adults" id="adults" value="2">
+              <div class="site-plus"></div>
+            </div>
+          </div>
 
-        <div>
-          <label for="children">Дети:</label>
-          <input type="text" name="children" id="children" placeholder="0">
+          <div>
+            <label for="children">Дети:</label>
+            <div class="site-btns">
+              <div class="site-minus"></div>
+              <input type="text" name="children" id="children" value="0">
+              <div class="site-plus"></div>
+            </div>
+          </div>
         </div>
 
         <button type="submit">Найти</button>
@@ -129,7 +143,7 @@
 
     <!-- Подвал -->
 
-      <footer>
+      <footer class="site-footer">
       <div><strong>#visitsedona</strong></div>
       <ul class="social">
         <li><a class="social-twitter" href="http://twitter.com">twitter</a></li>
@@ -139,5 +153,8 @@
       <div class="by-ha"><a href="http://htmlacademy.ru">Website by html academy</a></div>
     </footer>
   </div>
+
+  <script>
+  </script>
 </body>
 </html>
