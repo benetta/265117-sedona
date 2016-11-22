@@ -897,7 +897,7 @@ input[type="checkbox"] {
 .info-content h3,
 .info-price p {
   margin-top: 0;
-  margin-bottom: 13px;
+  margin-bottom: 11px;
 }
 
 .info-price {
@@ -959,12 +959,14 @@ input[type="checkbox"] {
 .hotels-more {
   width: 110px;
   height: 26px;
+  margin-top: 0;
 }
 
 .hotels-book {
   width: 142px;
   height: 26px;
   background-color: rgb(118, 99, 87);
+  margin-top: 0;
 }
 
 .hotels-more:hover {
