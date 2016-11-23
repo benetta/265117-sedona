@@ -39,7 +39,6 @@
           <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
         </div>
         <div class="header-image reason-1"></div>
-        <!-- <img src="img/reason-1.jpg" alt="Настоящий городок Седона"> -->
       </header>
       <section>
         <img src="img/home.png" alt="Жилье">
@@ -59,21 +58,19 @@
     </article>
 
     <!-- Вторая причина -->
-    <article>
+    <article class="site-flex">
       <header class="site-flex-header">
         <div class="header-image reason-2"></div>
-        <!-- <img src="img/reason-2.jpg" alt="Мост Дьявола"> -->
         <div class="header-text">
           <h3>Там есть<br/>мост дьявола</h3>
           <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-      </div>
+        </div>
       </header>
     </article>
 
     <!-- Причины 1-2-3 -->
 
     <div class="site-flex-reasons">
-
       <!-- Третья причина -->
       <article>
         <header>
@@ -102,42 +99,38 @@
     <!-- Поиск гостиницы -->
     <section class="search-form">
       <p><strong>Заинтересовались?</strong>Укажите предполагаемые даты поездки,<br/>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <img src="img/map.jpg" alt="Карта" width="1200">
-      <form class="site-search-form">
+      <div class="site-map"></div>
+      <form class="site-search-form" method="post">
         <header>Поиск гостиницы в Седоне</header>
         <div class="site-search-form-dates">
           <label for="arrival-date">Дата Заезда:</label>
           <input type="text" name="arrival-date" id="arrival-date" value="24 апреля 2016">
-          <div class="site-calendar"></div>
+          <button type="button" class="site-calendar"></button>
         </div>
 
         <div class="site-search-form-dates">
           <label for="departure-date">Дата Выезда:</label>
           <input type="text" name="departure-date" id="departure-date" value="4 июля 2016">
-          <div class="site-calendar"></div>
+          <button type="button" class="site-calendar"></button>
         </div>
 
         <div class="search-form-people">
-          <div>
             <label for="adults">Взрослые:</label>
             <div class="site-btns">
-              <div class="site-minus"></div>
+              <button type="button" class="site-minus"></button>
               <input type="text" name="adults" id="adults" value="2">
-              <div class="site-plus"></div>
+              <button type="button" class="site-plus"></button>
             </div>
-          </div>
 
-          <div>
             <label for="children">Дети:</label>
             <div class="site-btns">
-              <div class="site-minus"></div>
+              <button type="button" class="site-minus"></button>
               <input type="text" name="children" id="children" value="0">
-              <div class="site-plus"></div>
+              <button type="button" class="site-plus"></button>
             </div>
-          </div>
         </div>
 
-        <button type="submit">Найти</button>
+        <button class="site-search-form-btn" type="submit">Найти</button>
       </form>
     </section>
 
