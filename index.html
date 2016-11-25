@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <title>Добро пожаловать в Седону</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <div class="wrapper">
@@ -29,72 +29,72 @@
       "Because the Grand Canyon sucks!"</h1>
     </header>
 
-    <p class="lead-text"><strong>Седона - небольшой городок в Аризоне, заслуживающий большего!</strong> Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+    <p class="lead-text"><strong>Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</strong> Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
 
     <!-- Первая причина -->
-    <article class="site-flex">
-      <header class="site-flex-header">
+    <section class="site-flex">
+      <div class="counters site-flex-header">
         <div class="header-text">
           <h3>Настоящий городок</h3>
           <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
         </div>
         <div class="header-image reason-1"></div>
-      </header>
-      <section>
-        <img src="img/home.png" alt="Жилье">
+      </div>
+      <div class="site-reason-1-section">
+        <img src="img/home.png" alt="Жилье" width="75" height="76">
         <h4>Жилье</h4>
         <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-      </section>
-      <section>
-        <img src="img/food.png" alt="Еда">
+      </div class="site-reason-1-section">
+      <div class="site-reason-1-section">
+        <img src="img/food.png" alt="Еда" width="74" height="76">
         <h4>Еда</h4>
         <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-      </section>
-      <section>
-        <img src="img/gift.png" alt="Сувениры">
+      </div class="site-reason-1-section">
+      <div class="site-reason-1-section">
+        <img src="img/gift.png" alt="Сувениры" width="64" height="76">
         <h4>Сувениры</h4>
         <p>Не только китайского, но и местного производства!</p>
-      </section>
-    </article>
+      </div class="site-reason-1-section">
+    </section>
 
     <!-- Вторая причина -->
-    <article class="site-flex">
-      <header class="site-flex-header">
+    <section class="site-flex">
+      <div class="counters site-flex-header">
         <div class="header-image reason-2"></div>
         <div class="header-text">
-          <h3>Там есть<br/>мост дьявола</h3>
+          <h3>Там есть мост&nbsp;дьявола</h3>
           <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div>
-      </header>
-    </article>
+      </div>
+    </section>
 
     <!-- Причины 1-2-3 -->
 
-    <div class="site-flex-reasons">
+    <section class="site-flex-reasons">
       <!-- Третья причина -->
-      <article>
-        <header>
+      <div class="site-reasons-article">
+        <div class="counters site-reasons-article-header">
           <h3>Небольшая площадь</h3>
-          <p>Все достопримечательности находятся очень близко</p>
-        </header>
-      </article>
+          <p>Все&nbsp;достопримечательности находятся очень близко</p>
+        </div>
+      </div>
 
       <!-- Четвертая причина -->
-      <article>
-        <header>
+      <div class="site-reasons-article">
+        <div class="counters site-reasons-article-header">
           <h3>Красивая дорога</h3>
           <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-        </header>
-      </article>
+        </div>
+      </div>
 
       <!-- Пятая причина -->
-      <article>
-        <header>
+      <div class="site-reasons-article">
+        <div class="counters site-reasons-article-header">
           <h3>Мало<br/>туристов</h3>
           <p>Большинство едет в Гранд Каньон и толпится там</p>
-        </header>
-      </article>
-    </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Поиск гостиницы -->
     <section class="search-form">
@@ -147,7 +147,8 @@
     </footer>
   </div>
 
-  <script>
-  </script>
+<!-- Небольшая ремарка относительно семантики:
+я согласна с идеей спорного использования section / article, т.к. действительно этой частью сайта вряд-ли кто-то будет делиться. Однако, в рекоммендациях W3C я не смогла найти четкого замечания о том, что при использовании семантических тегой footer / header / navigation и т.д. обязательно использование тега main. Переиеновывать навигацию в хэдер только потому, что это первый элемент в потоке, на мой взгляд, нецелесообразно. В своей работе я всегда стараюсь опираться на официальные источники, и если в таковых всё же прописана обязательная связь header-main-footer, то я её не нашла.  -->
+
 </body>
 </html>

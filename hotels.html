@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <title>Отели Седоны</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <div class="wrapper">
@@ -15,7 +15,7 @@
         <li><a class="site-menu-link" href="#">Информация</a></li>
         <li><a class="site-menu-link" href="#">Фото и Видео</a></li>
         <li><a class="site-menu-link" href="#">Карта Штата</a></li>
-        <li><a class="site-menu-link" href="#">Гостиницы</a></li>
+        <li><a class="site-menu-link active">Гостиницы</a></li>
       </ul>
     </nav>
 
@@ -28,7 +28,7 @@
           <span class=" checkbox-indicator"></span>Бассейн
         </label>
         <label class="checkbox">
-          <input type="checkbox">
+          <input type="checkbox" disabled>
           <span class=" checkbox-indicator"></span>Парковка
         </label>
         <label class="checkbox">
@@ -56,8 +56,8 @@
       <fieldset class="filter-range">
         <legend>Стоимость в сутки (р):</legend>
         <div class="hotels-price-controls">
-          <label class="min-price">от <input type="text" name="min-price" value="0"></label>
-          <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+          <label class="min-price"><input type="text" name="min-price" value="0"></label>
+          <label class="max-price"><input type="text" name="max-price" value="3000"></label>
         </div>
         <div class="hotels-range-controls">
           <div class="scale">
@@ -93,14 +93,14 @@
       <div class="hotels-examples">
         <article>
           <div class="info">
-            <img src="img/amara.jpg" alt="amara resort and spa">
+            <img src="img/amara.jpg" alt="amara resort and spa" width="135" height="90">
             <div class="info-content">
               <h3>Amara Resort &amp; Spa</h3>
               <p><span class="hotels-type">Гостиница</span> от <span class="hotels-price">3500</span></p>
             </div>
             <div class="hotels-buttons">
-                <button class="hotels hotels-more">Подробнее</button>
-                <button class="hotels hotels-book">Забронировать</button>
+                <a href="#" class="hotels hotels-more">Подробнее</a>
+                <a href="#" class="hotels hotels-book">Забронировать</a>
             </div>
           </div>
           <div class="rating">
@@ -112,14 +112,14 @@
         <!-- Desert Inn -->
         <article>
           <div class="info">
-            <img src="img/quail-inn.jpg" alt="desert quail inn">
+            <img src="img/quail-inn.jpg" alt="desert quail inn" width="135" height="90">
             <div class="info-content">
               <h3>Desert Quail Inn</h3>
               <p><span class="hotels-type">Мотель</span>от <span class="hotels-price">2000</span></p>
             </div>
             <div class="hotels-buttons">
-              <button class="hotels hotels-more">Подробнее</button>
-              <button class="hotels hotels-book">Забронировать</button>
+              <a href="#" class="hotels hotels-more">Подробнее</a>
+              <a href="#" class="hotels hotels-book">Забронировать</a>
             </div>
             </div>
           <div class="rating">
@@ -131,14 +131,14 @@
         <!-- Villas at Poco Diablo -->
         <article>
           <div class="info">
-            <img src="img/villas.jpg" alt="Villas at Poco Diablo">
+            <img src="img/villas.jpg" alt="Villas at Poco Diablo" width="135" height="90">
             <div class="info-content">
               <h3>Villas at Poco Diablo</h3>
               <p><span class="hotels-type">Апартаменты</span>от <span class="hotels-price">4000</span></p>
             </div>
             <div class="hotels-buttons">
-              <button class="hotels hotels-more">Подробнее</button>
-              <button class="hotels hotels-book">Забронировать</button>
+              <a href="#" class="hotels hotels-more">Подробнее</a>
+              <a href="#" class="hotels hotels-book">Забронировать</a>
             </div>
           </div>
           <div class="rating">
@@ -149,7 +149,7 @@
       </div>
     </section>
 
-    <footer>
+    <footer class="site-footer">
       <div><strong>#visitsedona</strong></div>
       <ul class="social">
         <li><a class="social-twitter" href="http://twitter.com">twitter</a></li>
