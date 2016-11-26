@@ -2,6 +2,7 @@
 /*  TYPOGRAPHY  */
 
 body {
+  min-width: 1200px;
   background-color: rgb(242, 242, 242);
   font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 14px;
@@ -747,7 +748,7 @@ input[type="checkbox"] {
 /*  СТОИМОСТЬ В СУТКИ  */
 
 .filter-range {
-  width: 27%;
+  width: 26.5%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -758,7 +759,10 @@ input[type="checkbox"] {
 
 .filter-range legend {
   margin-bottom: 10px;
+  position: relative;
+  left: -10px;
 }
+
 
 .hotels-price-controls label:first-child,
 .hotels-price-controls label:nth-child(2) {
@@ -898,6 +902,9 @@ input[type="checkbox"] {
   border: 2px solid #ffffff;
   border-radius: 2px;
   cursor: pointer;
+
+  position: relative;
+  left: -5px;
 }
 
 .form-search-button:hover {
