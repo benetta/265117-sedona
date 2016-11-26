@@ -100,8 +100,9 @@
     <section class="search-form">
       <p><strong>Заинтересовались?</strong>Укажите предполагаемые даты поездки,<br/>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       <div class="site-map"></div>
-      <form class="site-search-form" method="post">
+      <div class="site-search-form-wrapper">
         <a class="open-contact-popup" href="#">Поиск гостиницы в Седоне</a>
+        <form class="site-search-form" method="post">
           <div class="site-search-form-dates">
             <label for="arrival-date">Дата Заезда:</label>
             <input type="text" name="arrival-date" id="arrival-date" value="24 апреля 2016">
@@ -130,7 +131,8 @@
             </div>
           </div>
           <button class="site-search-form-btn" type="submit">Найти</button>
-      </form>
+        </form>
+      </div>
     </section>
 
     <!-- Подвал -->

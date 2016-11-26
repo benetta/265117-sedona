@@ -34,21 +34,10 @@ input, button, textarea {
 
 /* SITE-MENU */
 
-.wrapper::before {
-  content: " ";
-  height: 58px;
-  display: block;
-}
-
 .site-menu {
-  position: absolute;
-  z-index: 100;
-  width: 1200px;
-  top: 0px;
-  left: 50%;
-  transform: translate(-50%, 0);
+  position: relative;
+  z-index: 1;
   background-color: rgb(255, 255, 255);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 1200px) {
@@ -152,7 +141,7 @@ input, button, textarea {
 
 .site-banner h1 {
   width: 460px;
-  height: 360px;
+  height: 355px;
   text-indent: -9999px;
   background: url(../img/header-text.png) no-repeat;
   position: absolute;
@@ -326,9 +315,9 @@ input, button, textarea {
   box-sizing: border-box;
   margin-right: auto;
   margin-left: auto;
+  padding-bottom: 120px;
   text-align: center;
   width: 500px;
-  min-height: 263px;
   line-height: 24px;
 }
 
@@ -341,6 +330,10 @@ input, button, textarea {
 
 .site-search-form {
   background-color: rgb(255, 255, 255);
+  padding-top: 55px;
+}
+
+.site-search-form-wrapper {
   width: 568px;
   position: absolute;
   top: 192px;
@@ -348,7 +341,7 @@ input, button, textarea {
   transform: translate(-50%, 0);
 }
 
-.site-search-form .open-contact-popup {
+.open-contact-popup {
   display: block;
   width: 568px;
   height: 54px;
@@ -359,7 +352,6 @@ input, button, textarea {
   color: rgb(255, 255, 255);
   background-color: rgb(119, 99, 87);
   padding-top: 32px;
-  margin-bottom: 53px;
   margin-left: auto;
   margin-right: auto;
   -ms-flex-item-align: stretch;
@@ -370,13 +362,10 @@ input, button, textarea {
 .site-search-form > div {
   width: 461px;
   height: 40px;
-  margin-bottom: 29px;
+  margin-bottom: 27px;
   padding-left: 56px;
 }
 
-.site-search-form-dates:nth-child(2) {
-  margin-bottom: 25px;
-}
 
 button {
   font-size: 21px;
@@ -716,6 +705,10 @@ legend {
   color: rgb(255, 255, 255);
   display: block;
   margin-top: 23px;
+}
+
+.hotels-search-field label {
+  cursor: pointer;
 }
 
 legend + .hotels-search-field {
@@ -1064,7 +1057,7 @@ input[type="checkbox"] {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: flex-start;
   -ms-flex-direction: row;
       flex-direction: row;
   padding: 30px 6%;
@@ -1080,13 +1073,10 @@ input[type="checkbox"] {
 
 .hotels-examples .info {
   position: relative;
-  padding-left: 165px;
+  padding-left: 30px;
 }
 
 .info img {
-  position: absolute;
-  left: 0;
-  top: 0;
   width: 135px;
   height: 90px;
 }
@@ -1099,6 +1089,19 @@ input[type="checkbox"] {
 
 .info-content h3 {
   font-size: 21px;
+}
+
+.info-content h3 a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.info-content h3 a:hover {
+  color: rgb( 139, 185, 213);
+}
+
+.info-content h3 a:active {
+  color: rgb( 202, 202, 202);
 }
 
 .info-content {
@@ -1119,16 +1122,9 @@ input[type="checkbox"] {
   content: " P.";
 }
 
-.info-content h3:hover {
-  color: rgb( 139, 185, 213);
-}
-
-.info-content h3:active {
-  color: rgb( 202, 202, 202);
-}
-
 .rating {
   margin-top: -3px;
+  margin-left: auto;
   min-height: 90px;
   display: -ms-flexbox;
   display: flex;
