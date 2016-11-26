@@ -44,17 +44,17 @@
         <img src="img/home.png" alt="Жилье" width="75" height="76">
         <h4>Жилье</h4>
         <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-      </div class="site-reason-1-section">
+      </div>
       <div class="site-reason-1-section">
         <img src="img/food.png" alt="Еда" width="74" height="76">
         <h4>Еда</h4>
         <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-      </div class="site-reason-1-section">
+      </div>
       <div class="site-reason-1-section">
         <img src="img/gift.png" alt="Сувениры" width="64" height="76">
         <h4>Сувениры</h4>
         <p>Не только китайского, но и местного производства!</p>
-      </div class="site-reason-1-section">
+      </div>
     </section>
 
     <!-- Вторая причина -->
@@ -102,35 +102,34 @@
       <div class="site-map"></div>
       <form class="site-search-form" method="post">
         <header>Поиск гостиницы в Седоне</header>
-        <div class="site-search-form-dates">
-          <label for="arrival-date">Дата Заезда:</label>
-          <input type="text" name="arrival-date" id="arrival-date" value="24 апреля 2016">
-          <button type="button" class="site-calendar"></button>
-        </div>
+          <div class="site-search-form-dates">
+            <label for="arrival-date">Дата Заезда:</label>
+            <input type="text" name="arrival-date" id="arrival-date" value="24 апреля 2016">
+            <button type="button" class="site-calendar"></button>
+          </div>
 
-        <div class="site-search-form-dates">
-          <label for="departure-date">Дата Выезда:</label>
-          <input type="text" name="departure-date" id="departure-date" value="4 июля 2016">
-          <button type="button" class="site-calendar"></button>
-        </div>
+          <div class="site-search-form-dates">
+            <label for="departure-date">Дата Выезда:</label>
+            <input type="text" name="departure-date" id="departure-date" value="4 июля 2016">
+            <button type="button" class="site-calendar"></button>
+          </div>
 
-        <div class="search-form-people">
-            <label for="adults">Взрослые:</label>
-            <div class="site-btns">
-              <button type="button" class="site-minus"></button>
-              <input type="text" name="adults" id="adults" value="2">
-              <button type="button" class="site-plus"></button>
-            </div>
+          <div class="search-form-people">
+              <label for="adults">Взрослые:</label>
+              <div class="site-btns">
+                <button type="button" class="site-minus"></button>
+                <input type="text" name="adults" id="adults" value="2">
+                <button type="button" class="site-plus"></button>
+              </div>
 
-            <label for="children">Дети:</label>
-            <div class="site-btns">
-              <button type="button" class="site-minus"></button>
-              <input type="text" name="children" id="children" value="0">
-              <button type="button" class="site-plus"></button>
-            </div>
-        </div>
-
-        <button class="site-search-form-btn" type="submit">Найти</button>
+              <label for="children">Дети:</label>
+              <div class="site-btns">
+                <button type="button" class="site-minus"></button>
+                <input type="text" name="children" id="children" value="0">
+                <button type="button" class="site-plus"></button>
+              </div>
+          </div>
+          <button class="site-search-form-btn" type="submit">Найти</button>
       </form>
     </section>
 
@@ -146,9 +145,5 @@
       <div class="by-ha"><a href="http://htmlacademy.ru">Website by html academy</a></div>
     </footer>
   </div>
-
-<!-- Небольшая ремарка относительно семантики:
-я согласна с идеей спорного использования section / article, т.к. действительно этой частью сайта вряд-ли кто-то будет делиться. Однако, в рекоммендациях W3C я не смогла найти четкого замечания о том, что при использовании семантических тегой footer / header / navigation и т.д. обязательно использование тега main. Переиеновывать навигацию в хэдер только потому, что это первый элемент в потоке, на мой взгляд, нецелесообразно. В своей работе я всегда стараюсь опираться на официальные источники, и если в таковых всё же прописана обязательная связь header-main-footer, то я её не нашла.  -->
-
 </body>
 </html>
