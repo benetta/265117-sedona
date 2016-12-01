@@ -406,12 +406,42 @@ button {
       flex-direction: column;
   /*-ms-flex-align: center;
       align-items: center;*/
+  animation-name: bounceUp;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
 
 .form-hidden {
   display: none;
 }
 
+@keyframes bounceUp {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.390,  0.575, 0.565, 1.000);
+  }
+
+  from {
+    opacity: 0;
+    transform: translateY(600px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+
+  75% {
+    transform: translateY(15px);
+  }
+
+  90% {
+    transform: translateY(-5px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
 .search-form-people > * {
   display: inline-block;
   vertical-align: top;
